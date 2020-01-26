@@ -1,0 +1,37 @@
+﻿{
+  "manifest_version": 2,
+  "name": "Smart Viewer",
+  "version": "1.1",
+    "icons": {"64": "photo/ff-logo.png"},
+
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["smart_viewer.js"],
+      "css": ["smart_viewer.css"]
+    }
+  ],
+  
+  "background": {
+      "scripts": [ "ignore_frame.js" ]
+  },
+
+  "web_accessible_resources": [
+    "photo/*.png",
+    "photo/*.svg"
+  ],
+
+  "permissions": [
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "<https://vbi-console-iad.iad.proxy.amazon.com>"
+  ],
+ 
+  "applications": {
+    "gecko": {
+           "strict_min_version": "64.0"
+    }
+  }
+}
