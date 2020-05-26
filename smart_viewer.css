@@ -1,0 +1,96 @@
+﻿img#smart_viewer_logo {
+    border: 0px transparent;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    -moz-opacity:0.20;
+    display: block !important;
+    z-index: 2147483647;
+}
+
+div#nyk_frame {
+    border: thin transparent;
+    top: 0px;
+    right: 21% !important;
+    width: 50%;
+    min-width: 400px;
+    height: 100%;
+    position: fixed;
+    z-index: 2147483647;
+}
+
+div#nyk_vresize 
+{
+    width: 3px;
+    height: 100%;
+    cursor: w-resize;
+    position: absolute;
+}
+
+
+iframe#nyk_content 
+{
+    border: none;
+    width: 100%;
+    height: calc(100% - 20px);
+    background-color: solid grey;
+}
+
+
+.nyk_toolbar {
+    display: flex;
+    justify-content: flex-start;
+    background:transparent;
+    height: none;
+}
+
+.nyk_btn_group 
+{
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 1px;
+    margin-left: 30px;
+}
+
+.nyk_btn_group > .nyk_btn 
+{
+    border-radius: .5rem;
+    height: 18px;
+    width: 40px;
+    border: 1px transparent;
+    background-color: transparent;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 40% !important;
+
+}
+
+.nyk_btn_group > .nyk_btn:hover {
+    box-shadow: inset 0 0 0 100px rgba(36, 70, 105, 0.1);
+}
+.nyk_btn_group > .nyk_btn:active {
+    box-shadow: inset 0 0 0 100px rgba(36, 70, 105, 0.4);
+}
+
+
+.nyk_btn_group#pin {
+    margin-left: auto;
+}
+
+.nyk_toolbar #logo {
+    background:url('photo/logo.png') no-repeat center center;
+    background-size: 70%;
+    width:48%;
+}
+
+.nyk_toolbar #tag {
+    background:url('photo/tag.svg');
+}
+.nyk_toolbar #tag[locked=yes] {
+    box-shadow: inset 0 0 .25rem #000000;
+}
+
+.nyk_toolbar #cross {
+    background:url('photo/cross.svg');
+}
