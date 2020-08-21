@@ -1,4 +1,5 @@
 # Amazon-SV-Extension
+About The Project
 I have created a Firefox extension for my Team at Amazon at Hyderabad that helps user to preview links/ Doc of any kind by hovering mouse cursor above it with out opening a extra tab. This was a self initiated project tackle the problems that effected our process and workflow.
 
 Whats Next :
